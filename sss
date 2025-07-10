@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>منبه متعدد + Dark/Light Mode</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>منبه متعدد</h1>
+      <button id="modeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <div class="create-alarm">
+      <input type="text" id="alarmName" placeholder="اسم المنبه" />
+      <button id="addAlarmBtn">أضف منبه 22 دقيقة</button>
+      <button id="resetAllBtn">إعادة ضبط الكل</button>
+    </div>
+
+    <ul id="alarmsList"></ul>
+  </div>
+
+  <audio id="alarmSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
